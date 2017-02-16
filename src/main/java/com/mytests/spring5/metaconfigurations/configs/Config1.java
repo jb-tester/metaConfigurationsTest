@@ -35,7 +35,7 @@ public class Config1 {
     }
     @MyConfigAnno1(packages = "com.mytests.spring5.metaconfigurations.components2")
     //@Configuration
-    //   @ComponentScan("com.mytests.spring5.metaconfigurations.components2")
+    //@ComponentScan("com.mytests.spring5.metaconfigurations.components2")
     public static class InnerConfig2{
         @Bean
         public B2 b2() {
@@ -43,6 +43,8 @@ public class Config1 {
         }
 
         @MyConfigAnno1(packages = "com.mytests.spring5.metaconfigurations.components3")
+        //@Configuration
+        //@ComponentScan("com.mytests.spring5.metaconfigurations.components3")
         public static class InnerConfig3{
             @Bean
             public B3 b3() {
